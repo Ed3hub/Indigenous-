@@ -54,7 +54,7 @@ export default function EmailVerification() {
 
           <div className="flex w-full gap-3 mb-[200px] flex justify-center">
             <p className="text-[16px]">
-              Didn't receive code?{" "}
+              Didn&apos;t receive code?{" "}
               <span className="text-[#049AFC]">Resend code</span>
             </p>
           </div>
