@@ -1,13 +1,6 @@
 "use client";
-import Line from "@/components/common/Line";
-import CoinbaseIcon from "@/components/icons/CoinbaseIcon";
-import GoogleIcon from "@/components/icons/GoogleIcon";
-import AppleIcon from "@/components/icons/AppleIcon";
-import Logo from "@/components/icons/Logo";
+
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Eye, EyeOff } from "lucide-react";
 import React, { useState } from "react";
 import {
   InputOTP,
@@ -16,9 +9,6 @@ import {
 } from "@/components/ui/input-otp";
 
 export default function EmailVerification() {
-  const [state, setState] = useState({
-    showPassword: false,
-  });
 
   return (
     <section className="bg-[#E8F1F2] min-h-screen flex items-center">
