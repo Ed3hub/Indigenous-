@@ -1,9 +1,11 @@
-const express = require('express');
-const connectDB = require('./config/db');
-const cors = require('cors');
-require('dotenv').config();
+import express from "express";
+import db from "./config/db.js";
+import cors from "cors";
+import dotenv from "dotenv";
 
-const nftCertificationRoutes = require('./routes/nftCertificationRoutes');
+dotenv.config();
+import authRoutes from "./routes/authRoutes.js";
+// const nftCertificationRoutes = require("./routes/nftCertificationRoutes");
 
 const app = express();
 
@@ -12,9 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/api/nft-certifications', nftCertificationRoutes);
+app.use("/api/auth", authRoutes);
 
 // Error Handler
-app.use(require('./middleware/errorHandler'));
+// app.use(require("./middleware/errorHandler"));
 
-module.exports = app;
+export default app;
