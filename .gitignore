@@ -1,2 +1,12 @@
 .env
 /node_modules
+
+# Ignore environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore dependencies
+node_modules/
