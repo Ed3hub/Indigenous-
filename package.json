@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type":"module",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Ed3hub/Indigenous-/issues"
   },
@@ -25,6 +25,7 @@
     "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.4.7",
     "ethers": "^6.13.5",
     "express": "^4.21.2",
@@ -32,7 +33,6 @@
     "mongoose": "^8.12.2",
     "web3": "^4.16.0"
   },
-  
   "devDependencies": {
     "nodemon": "^3.1.9"
   }

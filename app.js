@@ -1,12 +1,14 @@
-import express from "express";
-import db from "./config/db.js";
-import cors from "cors";
 import dotenv from "dotenv";
-
 dotenv.config();
-import authRoutes from "./routes/authRoutes.js";
-// const nftCertificationRoutes = require("./routes/nftCertificationRoutes");
 
+import express from "express";
+import cors from "cors";
+import connectDB from "./config/db.js"; 
+
+connectDB(); 
+
+import authRoutes from "./routes/authRoutes.js";
+import courseRoutes from "./routes/courseRoutes.js";
 const app = express();
 
 // Middleware
@@ -15,6 +17,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/courses", courseRoutes);
 
 // Error Handler
 // app.use(require("./middleware/errorHandler"));
