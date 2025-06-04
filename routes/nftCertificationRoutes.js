@@ -1,8 +1,18 @@
-const express = require('express');
+import express from "express";
+import {
+  getAllNftCertificates,
+  createNftCertificate,
+  getNftCertificateById,
+  deleteNftCertificate,
+  updateNftCertificate,
+} from "../controllers/nftCertificationController.js";
+
 const router = express.Router();
-const { getAllCertifications, createCertification } = require('../controllers/nftCertificationController');
 
-router.get('/', getAllCertifications);
-router.post('/', createCertification);
+router.post("/", createNftCertificate);
+router.get("/", getAllNftCertificates);
+router.get("/:id", getNftCertificateById);
+router.put("/:id", updateNftCertificate);
+router.delete("/:id", deleteNftCertificate);
 
-module.exports = router;
+export default router;
