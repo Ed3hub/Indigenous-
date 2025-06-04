@@ -259,11 +259,3 @@ http://localhost:4000
 4. You can also add tests and environments in Postman for smoother flow.
 
 ---
-
-## 📌 Final Notes
-
-- All IDs (`userId`, `courseId`, `threadId`) should be valid ObjectIds from your database.
-- Secure sensitive routes using middleware (e.g., `adminAuth.js`).
-- For production, ensure rate-limiting, input validation, logging, and HTTPS are configured.
-
-Would you like a downloadable Postman Collection file for this entire API?
